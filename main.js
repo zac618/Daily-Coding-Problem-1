@@ -15,7 +15,7 @@ let numberList = [10, 15, 3, 7];
 let i
 
 console.log(`The set of numbers for this will be: ${numberList}`);
-
+  
 let doMath = function() {
     console.log("k is " + k)
 
@@ -38,6 +38,8 @@ let doMath = function() {
         }
         if (result === "true") {
             console.log(`Yes, 2 of these numbers do add up to equal ${k}`)
+        } else {
+            console.log(`No, 2 of these numbers do not add up to equal ${k}`)
         }
 }
 }
