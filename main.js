@@ -12,14 +12,14 @@
 
 let numberList = [];
 
-console.log(`The set of numbers for this will be: ${this.numberList}`);
   
 let doMath = function(goal, numberList) {
     console.log("goal is " + goal)
+    let result
 
     // looping through array to get each number in the array
     for (let i = 0; i < numberList.length; i++) {
-        const initialNumber = numberList[i];
+        // const initialNumber = numberList[i];
         const newNum = goal - numberList[i];
         // console.log("initialNumber is " + initialNumber)
     
@@ -29,18 +29,14 @@ let doMath = function(goal, numberList) {
             // console.log("comparingNumber is " + comparingNumber)
             // console.log('new num is ' + newNum)
 
-            let result = Boolean;
-
             if (newNum === comparingNumber) {
-                result = "true"
-        }   else {
-                result = "false"
+                result = true
         }
-        if (result) {
-            console.log(`Yes, 2 of these numbers do add up to equal ${goal}`)
-        } else {
-            console.log(`No, 2 of these numbers do not add up to equal ${goal}`)
-        }
+}
+    if (result) {
+    console.log(`Yes, 2 of these numbers do add up to equal ${goal}`)
+    } else {
+    console.log(`No, 2 of these numbers do not add up to equal ${goal}`)
 }
 }
 }
